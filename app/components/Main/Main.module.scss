@@ -1,0 +1,65 @@
+@import "../../colors/colors.scss";
+
+.mainContent {
+  padding: 30px;
+  width: 100%;
+  .toolsCont {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  select {
+    width: 155px;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 4px;
+    height: 40px;
+    cursor: pointer;
+  }
+  input {
+    transform: scale(1.3);
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  hr {
+    margin-top: 10px;
+  }
+}
+
+.addButton {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 8px;
+  color: $whiteColor;
+  cursor: pointer;
+  span {
+    margin-left: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toolsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    input {
+      margin-left: 0;
+    }
+  }
+  .addButton {
+    height: 40px;
+    flex-direction: row !important;
+    justify-content: center;
+    span,
+    svg {
+      margin: 0 -6px;
+    }
+  }
+}

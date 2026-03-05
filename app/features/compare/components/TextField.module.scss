@@ -1,0 +1,83 @@
+@import "../../../colors/colors.scss";
+
+.fieldWrapper {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > div {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    margin-top: 40px;
+  }
+  button {
+    width: 142px;
+    height: 48px;
+    background-color: $secondaryTextColor;
+    border: none;
+    border-radius: 6px;
+    color: $whiteColor;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 24px;
+    resize: none;
+    background-color: $textFieldColor;
+  }
+  .comparedTexts {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    background-color: $textFieldColor;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: text;
+  }
+}
+
+.textField {
+  width: 100%;
+  height: 100%;
+  background-color: $textFieldColor;
+  border-radius: 8px;
+}
+
+.active {
+  background-color: $secondaryColor !important;
+}
+
+.success {
+  background-color: $successColor;
+}
+
+@media screen and (max-width: 1024px) {
+  .fieldWrapper {
+    height: 80vh;
+    > div {
+      height: 100%;
+    }
+    button {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fieldWrapper > div {
+    display: flex;
+    flex-direction: column;
+    svg {
+      transform: rotate(90deg);
+      margin: 10px 0;
+    }
+  }
+}
