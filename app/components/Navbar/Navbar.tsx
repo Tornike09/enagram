@@ -75,7 +75,7 @@ export const Navbar = () => {
           <div className={styles.userName}>
             <p>
               <ProfileIcon />
-              <span>თორნიკე თოფჩიშვილი</span>
+              <span>თამარ ონიანი</span>
             </p>
             <p>
               <DotsIcon />

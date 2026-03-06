@@ -33,6 +33,9 @@
     resize: none;
     background-color: $textFieldColor;
   }
+  .textareas {
+    max-height: 80vh;
+  }
   .comparedTexts {
     width: 100%;
     height: 100%;
@@ -41,6 +44,8 @@
     border-radius: 6px;
     font-size: 14px;
     cursor: text;
+    scroll-snap-type: y;
+    overflow-y: scroll;
   }
 }
 

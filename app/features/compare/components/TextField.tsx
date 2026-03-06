@@ -63,6 +63,7 @@ export const TextField = () => {
             className={styles.textField}
             value={text1}
             onChange={(e) => setText1(e.target.value)}
+            placeholder="დაიწყე წერა..."
           />
         )}
         <DoubleArrowIcon />
@@ -75,6 +76,7 @@ export const TextField = () => {
             className={styles.textField}
             value={text2}
             onChange={(e) => setText2(e.target.value)}
+            placeholder="დაიწყე წერა..."
           />
         )}
       </div>
